@@ -1,0 +1,138 @@
+
+html{
+    font-size: 50px;
+}
+@no:15;
+@media screen and (min-width:320px){
+    html{
+        font-size: (320px / @no);
+    }
+};
+@media screen and (min-width:360px){
+    html{
+       font-size: 360px / @no;
+    }
+}
+@media screen and (min-width:375px){
+    html{
+       font-size: (375px / @no);
+    }
+}
+@media screen and (min-width:400px){
+    html{
+       font-size: (400px / @no);
+    }
+}
+@media screen and (min-width:480px){
+    html{
+       font-size: (480px / @no);
+    }
+}
+@media screen and (min-width:540px){
+    html{
+       font-size: (540px / @no);
+    }
+}
+@media screen and (min-width:720px){
+    html{
+       font-size: (720px / @no);
+    }
+}
+@media screen and (min-width:750px){
+    html{
+       font-size: (750px / @no);
+    }
+}
+body{
+    min-width: 320px;
+    margin: 0 auto;
+    width: 15rem;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.search-content{
+        width: 15rem;
+        height: (88rem / 50);
+        background-color: #ffc001;
+        position: fixed;
+        left:50%;
+        top: 0;
+        transform: translateX(-50%);
+        display: flex;
+        .ify{
+            width: (44rem / 50);
+            height: (70rem / 50);
+            margin: (11rem/50) (25rem/50) (7rem/50) (24rem/50);
+            background: url(../image/remx/images/classify.png) no-repeat;
+            background-size:(44rem / 50)  (70rem / 50) ;
+        }
+        .search{
+            flex: 1;
+            input{
+                box-sizing: border-box;
+                height: (66rem/50);
+                border: 0;
+                width: 100%;
+                padding-left: (55rem/50);
+                border-radius: (33rem/50);
+                background-color: #fff2cc;
+                outline: none;
+                margin-top: (10rem/50);
+                font-size: (25rem/50);
+                color: #757575;
+            }
+        }
+        .login{
+            width: (75rem/50);
+            height: (70rem/50);
+            margin: (10rem/50);
+            font-size: (25rem/50);
+            text-align: center;
+            line-height: (70rem/50);
+            color: white;
+            letter-spacing: (1rem/50);
+        }
+}
+.banner{
+    width: (750rem/50);
+    height: (368rem/50);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.ad{
+    display: flex;
+    a{
+        flex: 1;
+        img{
+            width: 100%;
+        }
+    }
+}
+nav{
+        width: (750rem/50);
+    a{
+        float:left;
+        width:(150rem/50);
+        height: (140rem/50);
+        text-align: center;
+        img{
+            display: block;
+            width: (82rem/50);
+            height: (82rem/50);
+            margin: (10rem/50) auto 0;
+        }
+        span{
+            font-size: (25rem/50);
+            color: #333;
+            vertical-align: top;
+        }
+    }
+}
